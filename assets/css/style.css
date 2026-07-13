@@ -9,6 +9,8 @@ h1{
 
 .center_content{
     display: flex;
+    min-height: 25vh;
+    min-width: 75vw;
     justify-content: center;
     align-items: center;
 
