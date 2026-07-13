@@ -7,8 +7,8 @@
    viewBox="0 0 10.583333 10.583333"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    sodipodi:docname="fondo.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="11.388664"
-     inkscape:cx="19.712584"
-     inkscape:cy="22.522395"
-     inkscape:window-width="1920"
+     inkscape:cx="12.336829"
+     inkscape:cy="15.585673"
+     inkscape:window-width="1025"
      inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
        id="grid5"
@@ -67,16 +67,16 @@
        d="M 10.570635,-0.02323217 -0.04646433,10.640332"
        id="path3" />
     <path
-       style="fill:#555555;fill-opacity:1;stroke:#555555;stroke-width:1.13331;stroke-dasharray:none;stroke-opacity:1"
-       d="M 10.932114,-0.39740933 -0.33824682,10.92158"
+       style="fill:#555555;fill-opacity:1;stroke:#3e3e3e;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.535787,0.03484858 -0.01161607,10.582251"
        id="path4" />
     <path
-       style="fill:#555555;fill-opacity:1;stroke:#555555;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#555555;fill-opacity:1;stroke:#3e3e3e;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1"
        d="M 5.2737014,-5.2737014 -5.2737014,5.2737014"
        id="path4-3" />
     <path
-       style="fill:#555555;fill-opacity:1;stroke:#555555;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1"
-       d="M 15.857034,5.3096323 5.3096322,15.857034"
+       style="fill:#555555;fill-opacity:1;stroke:#3e3e3e;stroke-width:1.05833;stroke-dasharray:none;stroke-opacity:1"
+       d="M 15.875,5.2916667 5.3275978,15.839069"
        id="path4-1" />
   </g>
 </svg>
