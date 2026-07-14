@@ -11,6 +11,13 @@ body{
 
     font-family: 'Jersey 10';
 }
+a{
+    color: rgb(193, 22, 56);
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: blueviolet;
+}
 
 .main_title{
     font-size: 350%;
@@ -23,7 +30,7 @@ body{
     min-height: fit-content;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(20,20,20);    
+    background-color: rgb(20, 20, 20);    
 }
 
 .center_text{
@@ -36,17 +43,19 @@ body{
     padding-right: 5vw;
 }
 
+.page_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2vh;
+    width: 75vw;
+    background-color: rgb(20, 20, 20);
+}
 .nav_links{
     list-style: none;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    gap: 3vw;
     font-size: 175%;
-}
-.nav_links a{
-    color: rgb(193, 22, 56);
-    transition: color 0.3s ease;
-}
-.nav_links a:hover{
-    color: blueviolet;
 }
