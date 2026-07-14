@@ -12,8 +12,9 @@ body{
     font-family: 'Jersey 10';
 }
 
-h1{
-    color:aliceblue;
+.main_title{
+    font-size: 350%;
+    color: aliceblue;
 }
 
 .center{
