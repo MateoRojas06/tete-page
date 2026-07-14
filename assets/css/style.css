@@ -35,3 +35,16 @@ body{
 .pfp{
     padding-right: 5vw;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    font-size: 150%;
+}
