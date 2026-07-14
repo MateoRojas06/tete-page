@@ -36,16 +36,16 @@ body{
     padding-right: 5vw;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav_links{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 175%;
+}
+.nav_links a{
+    color: rgb(193, 22, 56);
+}
+.nav_links a:hover{
+    color: blueviolet;
 }
