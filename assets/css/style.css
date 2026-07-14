@@ -20,11 +20,13 @@ h1{
     display: flex;
     min-width: 75vw;
     min-height: fit-content;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(20,20,20);    
 }
 
 .center_text{
     color: aliceblue;
+    font-size: 150%;
+    padding-left: 5vw;
 }
