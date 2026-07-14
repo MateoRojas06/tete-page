@@ -45,6 +45,7 @@ body{
 }
 .nav_links a{
     color: rgb(193, 22, 56);
+    transition: color 0.3s ease;
 }
 .nav_links a:hover{
     color: blueviolet;
