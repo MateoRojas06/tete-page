@@ -19,7 +19,7 @@ body{
 
 .center{
     display: flex;
-    min-width: 75vw;
+    width: 75vw;
     min-height: fit-content;
     justify-content: space-between;
     align-items: center;
