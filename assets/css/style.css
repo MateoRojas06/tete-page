@@ -12,6 +12,7 @@ body{
     min-height: fit-content;
 
     font-family: 'Jersey 10';
+    margin: 0;
 }
 a{
     display: inline-block;
@@ -35,11 +36,10 @@ a:hover{
 
 .center{
     display: flex;
-    width: 75vw;
     min-height: fit-content;
+    width: inherit;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(20, 20, 20);    
+    align-items: center;   
 }
 
 .center_text{
@@ -61,8 +61,7 @@ a:hover{
     align-items: center;
     justify-content: space-evenly;
     margin: 5vh;
-    width: 75vw;
-    background-color: rgb(20, 20, 20);
+    width: inherit;
 }
 .nav_links{
     list-style: none;
@@ -71,4 +70,13 @@ a:hover{
     gap: 3vw;
     font-size: 175%;
     margin-bottom: 3vh;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+    height: 100vh;
+    background-color: rgb(20, 20, 20); 
 }
