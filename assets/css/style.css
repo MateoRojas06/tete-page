@@ -1,5 +1,7 @@
+/*FUENTE*/
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
+/*ESTILOS GENERALES*/
 body{
     background-color: rgb(20, 20, 20);
     background-image: url(../images/fondo.svg);
@@ -14,6 +16,7 @@ body{
 a{
     display: inline-block;
     color: rgb(193, 22, 56);
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 a:hover{
@@ -21,10 +24,13 @@ a:hover{
     transform: scale(1.2);
 }
 
+/*TEXTO*/
 .main_title{
     font-size: 350%;
     color: aliceblue;
     text-shadow: 10px 5px 0px rgba(193, 22, 56, 0.9);
+    margin-top: 3vh;
+    margin-bottom: 1vh;
 }
 
 .center{
@@ -42,17 +48,19 @@ a:hover{
     padding-left: 5vw;
 }
 
+/*IMAGEN*/
 .pfp{
     margin-left: 3vw;
     margin-right: 5vw;
 }
 
+/*HEADER*/
 .page_head{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 2vh;
+    margin: 5vh;
     width: 75vw;
     background-color: rgb(20, 20, 20);
 }
@@ -62,4 +70,5 @@ a:hover{
     justify-content: space-evenly;
     gap: 3vw;
     font-size: 175%;
+    margin-bottom: 3vh;
 }
