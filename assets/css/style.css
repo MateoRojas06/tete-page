@@ -12,16 +12,19 @@ body{
     font-family: 'Jersey 10';
 }
 a{
+    display: inline-block;
     color: rgb(193, 22, 56);
     transition: color 0.3s ease;
 }
 a:hover{
     color: blueviolet;
+    transform: scale(1.2);
 }
 
 .main_title{
     font-size: 350%;
     color: aliceblue;
+    text-shadow: 10px 5px 0px rgba(193, 22, 56, 0.9);
 }
 
 .center{
@@ -40,7 +43,8 @@ a:hover{
 }
 
 .pfp{
-    padding-right: 5vw;
+    margin-left: 3vw;
+    margin-right: 5vw;
 }
 
 .page_head{
