@@ -88,4 +88,6 @@ a:hover{
     background-color: rgb(20, 20, 20); 
     border-left: 2vw solid rgb(62, 62, 62);
     border-right: 2vw solid rgb(62, 62, 62);
+    box-sizing: border-box;
+    padding: 0, 16px;
 }
