@@ -30,7 +30,7 @@ a:hover{
     font-size: 350%;
     color: aliceblue;
     text-shadow: 10px 5px 0px rgba(193, 22, 56, 0.9);
-    margin-top: 3vh;
+    margin: 3vh;
     margin-bottom: 1vh;
 }
 
@@ -76,8 +76,9 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75vw;
-    min-width: 360px;
+    width: clamp(360px, 50vw, 100%);
     min-height: 100dvh;
     background-color: rgb(20, 20, 20); 
+    border-left: 2vw solid rgb(62, 62, 62);
+    border-right: 2vw solid rgb(62, 62, 62);
 }

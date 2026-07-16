@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="icon.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +26,11 @@
      inkscape:zoom="7.51"
      inkscape:cx="56.857523"
      inkscape:cy="49.334221"
-     inkscape:window-width="1920"
+     inkscape:window-width="960"
      inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
@@ -40,26 +40,26 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';writing-mode:lr-tb;direction:ltr;fill:#e6e6e6;fill-opacity:1;stroke:#c7c7c7;stroke-width:4.69063;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';writing-mode:lr-tb;direction:ltr;fill:#3e3e3e;fill-opacity:1;stroke:#3e3e3e;stroke-width:4.69063;stroke-opacity:1"
        x="8.1630907"
        y="21.137522"
        id="text3-4"
        transform="scale(1.051589,0.95094187)"><tspan
          sodipodi:role="line"
          id="tspan3-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#e6e6e6;stroke:#c7c7c7;stroke-width:4.69063;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';fill:#3e3e3e;stroke:#3e3e3e;stroke-width:4.69063;stroke-opacity:1;fill-opacity:1"
          x="8.1630907"
          y="21.137522">T</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';writing-mode:lr-tb;direction:ltr;fill:#660e0e;fill-opacity:1;stroke:#222222;stroke-width:4.69063;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:#141414;stroke-width:4.69063;stroke-opacity:1"
        x="2.9851625"
        y="23.710388"
        id="text3"
        transform="scale(1.051589,0.95094187)"><tspan
          sodipodi:role="line"
          id="tspan3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';stroke:#222222;stroke-width:4.69063;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.4531px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';stroke:#141414;stroke-width:4.69063;stroke-opacity:1;fill:#000000;fill-opacity:1"
          x="2.9851625"
          y="23.710388">T</tspan></text>
   </g>
