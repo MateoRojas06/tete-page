@@ -9,9 +9,11 @@
 
 /*DEFINITIONS*/
 :root{
+    --mate-text: rgb(241, 236, 236);
     --mate-dark: rgb(20, 20, 20);
     --mate-light: rgb(62, 62, 62);
-    --mate-red: rgb(193, 22, 56);
+    --mate-red: rgb(243, 37, 52);
+    --mate-dark-red: rgb(200, 14, 26);
 }
 
 /*ESTILOS GENERALES*/
@@ -42,8 +44,7 @@ a:hover{
 /*TEXTO*/
 .main_title{
     font-size: 350%;
-    color: aliceblue;
-    text-shadow: 10px 5px 0px var(--mate-red);
+    text-shadow: 4px 3px 0px var(--mate-dark-red);
     margin: 3vh;
     margin-bottom: 1vh;
 }
@@ -57,7 +58,6 @@ a:hover{
 }
 
 .center_text{
-    color: aliceblue;
     font-size: 150%;
     margin-left: 3vw;
     margin-right: 3vw;
@@ -103,4 +103,6 @@ a:hover{
     border-inline: 2vw solid var(--mate-light);
     box-sizing: border-box;
     padding: 0, 16px;
+
+    color: var(--mate-text);
 }
