@@ -59,8 +59,7 @@ a:hover{
 
 .center_text{
     font-size: 150%;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-inline: 3vw;
 }
 .center_text p{
     text-align: justify;
@@ -69,8 +68,7 @@ a:hover{
 /*IMAGEN*/
 .pfp{
     float: right;
-    margin-left: 3vw;
-    margin-right: 1vw;
+    margin-inline: 1vw;
     margin-bottom: 1vh;
 }
 
@@ -91,6 +89,7 @@ a:hover{
     gap: 3vw;
     font-size: 175%;
     margin-bottom: 3vh;
+    padding-inline: 2vw;
 }
 
 .all{
