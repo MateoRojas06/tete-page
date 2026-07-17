@@ -57,7 +57,9 @@ a:hover{
     margin: 0;
     padding: 0;
 }
-
+.center_title{
+    margin: 0;
+}
 .center_text{
     font-size: 150%;
     margin-inline: 3vw;
