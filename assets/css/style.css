@@ -7,9 +7,16 @@
   src: url('../fonts/jersey10.woff2') format('woff2');
 }
 
+/*DEFINITIONS*/
+:root{
+    --mate-dark: rgb(20, 20, 20);
+    --mate-light: rgb(62, 62, 62);
+    --mate-red: rgb(193, 22, 56);
+}
+
 /*ESTILOS GENERALES*/
 body{
-    background-color: rgb(20, 20, 20);
+    background-color: var(--mate-dark);
     background-image: url(../images/fondo.svg);
     display: flex;
     flex-direction: column;
@@ -23,7 +30,7 @@ body{
 
 a{
     display: inline-block;
-    color: rgb(193, 22, 56);
+    color: var(--mate-red);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -36,7 +43,7 @@ a:hover{
 .main_title{
     font-size: 350%;
     color: aliceblue;
-    text-shadow: 10px 5px 0px rgba(193, 22, 56, 0.9);
+    text-shadow: 10px 5px 0px var(--mate-red);
     margin: 3vh;
     margin-bottom: 1vh;
 }
@@ -75,7 +82,7 @@ a:hover{
     justify-content: space-evenly;
     margin: 3vh;
     width: inherit;
-    border-bottom: 1vh dashed rgb(62, 62, 62);
+    border-bottom: 1vh dashed var(--mate-light);
 }
 .nav_links{
     list-style: none;
@@ -92,9 +99,8 @@ a:hover{
     align-items: center;
     width: clamp(360px, 50dvw, 100%);
     min-height: 100dvh;
-    background-color: rgb(20, 20, 20); 
-    border-left: 2vw solid rgb(62, 62, 62);
-    border-right: 2vw solid rgb(62, 62, 62);
+    background-color: var(--mate-dark); 
+    border-inline: 2vw solid var(--mate-light);
     box-sizing: border-box;
     padding: 0, 16px;
 }
