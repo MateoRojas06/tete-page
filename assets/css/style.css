@@ -1,5 +1,11 @@
 /*FUENTE*/
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@font-face {
+  font-display: swap;
+  font-family: 'Jersey 10';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jersey10.woff2') format('woff2');
+}
 
 /*ESTILOS GENERALES*/
 body{
