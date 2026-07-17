@@ -47,6 +47,7 @@ a:hover{
     text-shadow: 4px 3px 0px var(--mate-dark-red);
     margin: 3vh;
     margin-bottom: 1vh;
+    text-align: center;
 }
 
 .center{
