@@ -8,17 +8,19 @@
 }
 
 /*DEFINITIONS*/
-:root{
+:root {
     --mate-text: rgb(241, 236, 236);
     --mate-dark: rgb(20, 20, 20);
     --mate-light: rgb(62, 62, 62);
     --mate-red: rgb(243, 37, 52);
     --mate-dark-red: rgb(200, 14, 26);
+
+    --mate-text-light: rgb(20, 20, 20);
+    --mate-background-light: rgb(241, 236, 236);
 }
 
 /*ESTILOS GENERALES*/
-body{
-    background-color: var(--mate-dark);
+body {
     background-image: url(../images/fondo.svg);
     display: flex;
     flex-direction: column;
@@ -28,6 +30,8 @@ body{
 
     font-family: 'Jersey 10';
     margin: 0;
+
+    transition: background-color 0.5s ease;
 }
 
 a{
@@ -100,16 +104,26 @@ ul{
 }
 
 /*MAIN*/
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: clamp(360px, 50dvw, 100%);
     min-height: 100dvh;
-    background-color: var(--mate-dark); 
     border-inline: 2vw solid var(--mate-light);
     box-sizing: border-box;
     padding: 0, 16px;
 
-    color: var(--mate-text);
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+main.dark-mode, body.dark-mode{
+    background-color: var(--mate-dark);
+    color: var(--mate-text)
+}
+
+main.light-mode, body.light-mode{
+    background-color: var(--mate-background-light);
+    color: var(--mate-text-light)
 }
