@@ -99,7 +99,8 @@ ul{
     padding-inline: 1vw;
 }
 
-.all{
+/*MAIN*/
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
