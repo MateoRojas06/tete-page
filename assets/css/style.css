@@ -41,6 +41,10 @@ a:hover{
     transform: scale(1.2);
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*TEXTO*/
 .main_title{
     font-size: 350%;
@@ -89,10 +93,10 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 2vw;
+    gap: 3vw;
     font-size: 175%;
-    margin-bottom: 3vh;
-    padding-inline: 2vw;
+    margin-bottom: 2vh;
+    padding-inline: 1vw;
 }
 
 .all{
