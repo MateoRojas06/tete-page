@@ -31,7 +31,7 @@ body {
     font-family: 'Jersey 10';
     margin: 0;
 
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 a{
@@ -108,22 +108,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: inherit;
     width: clamp(360px, 50dvw, 100%);
     min-height: 100dvh;
     border-inline: 2vw solid var(--mate-light);
     box-sizing: border-box;
     padding: 0, 16px;
-
-    transition: background-color 0.5s ease;
-    transition: color 0.5s ease;
 }
 
-main.dark-mode, body.dark-mode{
+body.dark-mode{
     background-color: var(--mate-dark);
     color: var(--mate-text)
 }
 
-main.light-mode, body.light-mode{
+body.light-mode{
     background-color: var(--mate-background-light);
     color: var(--mate-text-light)
 }
