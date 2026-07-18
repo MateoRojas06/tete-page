@@ -19,7 +19,7 @@
     --mate-background-light: rgb(241, 236, 236);
 }
 
-/*ESTILOS GENERALES*/
+/*ESTILOS GENERALES Y BODY*/
 body {
     background-image: url(../images/fondo.svg);
     display: flex;
@@ -33,24 +33,32 @@ body {
 
     transition: background-color 0.5s ease, color 0.5s ease;
 }
+body.dark-mode {
+    background-color: var(--mate-dark);
+    color: var(--mate-text)
+}
+body.light-mode {
+    background-color: var(--mate-background-light);
+    color: var(--mate-text-light)
+}
 
-a{
+a {
     display: inline-block;
     color: var(--mate-red);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-a:hover{
+a:hover {
     color: blueviolet;
     transform: scale(1.2);
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
 /*TEXTO*/
-.main_title{
+.main_title {
     font-size: 350%;
     text-shadow: 4px 3px 0px var(--mate-dark-red);
     margin: 3vh;
@@ -58,33 +66,33 @@ ul{
     text-align: center;
 }
 
-.center{
+.center {
     display: block;
     min-height: fit-content;
     width: inherit;
     margin: 0;
     padding: 0;
 }
-.center_title{
+.center_title {
     margin: 0;
 }
-.center_text{
+.center_text {
     font-size: 150%;
     margin-inline: 3vw;
 }
-.center_text p{
+.center_text p {
     text-align: justify;
 }
 
 /*IMAGEN*/
-.pfp{
+.pfp {
     float: right;
     margin-inline: 1vw;
     margin-bottom: 1vh;
 }
 
 /*HEADER*/
-.page_head{
+.page_head {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +100,7 @@ ul{
     width: inherit;
     border-bottom: 1vh dashed var(--mate-light);
 }
-.nav_links{
+.nav_links {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -116,12 +124,3 @@ main {
     padding: 0, 16px;
 }
 
-body.dark-mode{
-    background-color: var(--mate-dark);
-    color: var(--mate-text)
-}
-
-body.light-mode{
-    background-color: var(--mate-background-light);
-    color: var(--mate-text-light)
-}
