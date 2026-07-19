@@ -30,7 +30,13 @@
 
             <header class="page_head">
                 <h1 class="main_title">Welcome to Tete's Page</h1>
-                <button id="theme_toggle">Toggle Light Mode</button>
+                <div class="buttons">
+                    <button id="theme_toggle">Toggle Light Mode</button>
+                    <select id="language_select" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es" selected>Español</option>
+                    </select>
+                </div>
                 <nav class="nav_bar">
                     <ul class="nav_links">
                         <li><a href="index.html" target="_self">Home</a></li>
