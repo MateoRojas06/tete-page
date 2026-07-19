@@ -120,7 +120,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: inherit;
-    width: clamp(360px, 50dvw, 100%);
+    width: clamp(360px, 70vw, 100%);
     min-height: 100dvh;
     border-inline: 2vw solid var(--mate-light);
     box-sizing: border-box;
@@ -146,4 +146,21 @@ button:hover {
 }
 button:active {
     transform: scale(1);
+}
+
+/*STATUS*/
+#status_message {
+    margin: 0;
+
+}
+#status_block {
+    border: 6px dashed var(--mate-light);
+    margin-bottom: 3vh;
+    min-height: 146px;
+}
+#status_block p {
+    text-align: justify;
+    margin: 1%;
+    margin-top: 0;
+    padding: 0;
 }
