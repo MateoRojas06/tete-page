@@ -39,6 +39,9 @@ body.light-mode {
     background-color: var(--mate-background-light);
     color: var(--mate-text-light)
 }
+body.light-mode a {
+    color: var(--mate-dark-red);
+}
 
 a {
     display: inline-block;
