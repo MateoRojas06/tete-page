@@ -15,3 +15,14 @@ toggleButton.addEventListener('click', ()=>{
         localStorage.setItem('theme', 'dark');
     }
 });
+
+// Moving background
+let position = 0;
+const speed = 0.2;
+
+function scrollBg(){
+    position += speed;
+    document.body.style.backgroundPosition = `${position}px`;
+    requestAnimationFrame(scrollBg);
+}
+scrollBg();
