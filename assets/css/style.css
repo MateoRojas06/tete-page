@@ -85,6 +85,8 @@ ul {
 /*IMAGEN*/
 .pfp {
     float: right;
+    width: 146px;
+    height: 240px;
     margin-inline: 1vw;
     margin-bottom: 1vh;
 }
