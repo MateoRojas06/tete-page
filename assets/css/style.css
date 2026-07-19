@@ -1,7 +1,7 @@
 /*FUENTE*/
 @font-face {
   font-display: swap;
-  font-family: 'Jersey 10';
+  font-family: Jersey10;
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/jersey10.woff2') format('woff2');
@@ -28,7 +28,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 
-    font-family: 'Jersey 10';
+    font-family: Jersey10;
     margin: 0;
 
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -124,7 +124,7 @@ main {
 
 /*BUTTONS*/
 button {
-   font-family: 'Jersey 10';
+   font-family: Jersey10;
    font-size: 125%;
    color: var(--mate-dark);
    background-color: var(--mate-text);
