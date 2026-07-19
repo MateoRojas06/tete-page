@@ -27,3 +27,9 @@ function scrollBg(){
     requestAnimationFrame(scrollBg);
 }
 scrollBg();
+
+// Language selection
+function changeLanguage(language){
+    const path = window.location.href.split('/').pop();
+    window.location.href = '../' + language + '/' + path
+}
