@@ -30,6 +30,6 @@ scrollBg();
 
 // Language selection
 function changeLanguage(language){
-    const path = window.location.href.split('/').pop();
+    const path = window.location.pathname.split('/').pop();
     window.location.href = '../' + language + '/' + path
 }
