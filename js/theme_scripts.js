@@ -1,3 +1,4 @@
+// Light mode toggle
 const toggleButton = document.getElementById('theme_toggle');
 const currentTheme = localStorage.getItem('theme');
 const body = document.body;
