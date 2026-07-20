@@ -148,6 +148,15 @@ button:active {
     transform: scale(1);
 }
 
+select {
+    font-family: Jersey10;
+    font-size: 125%;
+    color: var(--mate-dark);
+    background-color: var(--mate-text);
+    border: 3px solid var(--mate-light);
+    cursor: pointer;
+}
+
 /*STATUS*/
 #status_message {
     margin: 0;
