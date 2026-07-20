@@ -11,6 +11,11 @@
         <meta property="og:description" content="The only place in the whole">
 
         <script>
+            // This should make it so my thumbnail on neocities doesn't get messed up
+            if (navigator.userAgent === 'Screenjesus'){
+                window.location.href = 'en/index.html';
+            }
+
             const lang = navigator.language;
 
             if (lang.startsWith('es')){
