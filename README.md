@@ -6,4 +6,4 @@
 ## Features
 - Navigation bar that links to other sites
 - Cool theme
-- Lorem Ipsum
+- No lorem Ipsum
