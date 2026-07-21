@@ -42,7 +42,6 @@ body.light-mode {
 body.light-mode a {
     color: var(--mate-dark-red);
 }
-
 a {
     display: inline-block;
     color: var(--mate-red);
@@ -74,7 +73,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-.center_title {
+.center h2 {
     margin: 0;
 }
 .center_text {
@@ -82,6 +81,7 @@ ul {
     margin-inline: 3vw;
 }
 .center_text p {
+    margin: 0;
     text-align: justify;
 }
 
@@ -158,10 +158,6 @@ select {
 }
 
 /*STATUS*/
-#status_message {
-    margin: 0;
-
-}
 #status_block {
     border: 6px dashed var(--mate-light);
     margin-bottom: 3vh;
