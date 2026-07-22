@@ -1,0 +1,74 @@
+/*FUENTE*/
+@font-face {
+  font-display: swap;
+  font-family: Jersey10;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jersey10.woff2') format('woff2');
+}
+
+/*DEFINITIONS*/
+:root {
+    --mate-text: rgb(241, 236, 236);
+    --mate-dark: rgb(20, 20, 20);
+    --mate-light: rgb(62, 62, 62);
+    --mate-red: rgb(243, 37, 52);
+    --mate-dark-red: rgb(200, 14, 26);
+
+    --mate-text-light: rgb(20, 20, 20);
+    --mate-background-light: rgb(241, 236, 236);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--mate-dark);
+    background-image: url(../images/fondo.svg);
+    color: var(--mate-text);
+
+    --shadow-color: var(--mate-text);
+
+    font-family: Jersey10, sans-serif;
+
+    transition: all 0.5s ease;
+}
+body.light-mode {
+    background-color: var(--mate-background-light);
+    color: var(--mate-text-light);
+
+    --shadow-color: var(--mate-dark);
+}
+body.light-mode a {
+    color: var(--mate-dark-red);
+}
+
+a {
+    display: inline-block;
+    color: var(--mate-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: blueviolet;
+    transform: scale(1.2);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-color: inherit;
+    width: clamp(360px, 70vw, 100%);
+
+    box-shadow: 0 0 30px var(--shadow-color);
+    transition: box-shadow 0.5s ease;
+
+    border-inline: 2vw solid var(--mate-light);
+}
