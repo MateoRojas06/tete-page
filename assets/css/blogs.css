@@ -45,15 +45,21 @@ body.light-mode {
 body.light-mode a {
     color: var(--mate-dark-red);
 }
+body.light-mode h2 {
+    color: var(--mate-text);
+    background-image: linear-gradient(to right, var(--mate-dark), var(--mate-text));
+}
 
 h1 {
+    font-size: 350%;
     text-align: center;
 }
 h2 {
-    padding-inline: 5px;
+    padding-inline: 2vw;
     color: var(--mate-dark);
     background-image: linear-gradient(to left, var(--mate-dark), var(--mate-text));
     border-radius: 20px;
+    transition: color 0.5s ease;
 }
 
 a {
@@ -61,6 +67,7 @@ a {
     color: var(--mate-red);
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 175%;
 }
 a:hover {
     color: blueviolet;
@@ -74,6 +81,11 @@ header {
     width: inherit;
     border-bottom: 1vh dashed var(--mate-light);
     padding-bottom: 2vh;
+}
+header ul {
+    display: flex;
+    gap: 3vw;
+    justify-content: space-evenly;
 }
 
 .column {
@@ -89,8 +101,15 @@ header {
     transition: box-shadow 0.5s ease;
 
     border-inline: 2vw solid var(--mate-light);
+    box-sizing: border-box;
+    padding: 0, 16px;
 }
 
 main {
+    padding-inline: 2vw;
+    font-size: 150%;
     margin: 3%;
+}
+main p {
+    text-align: justify;
 }
