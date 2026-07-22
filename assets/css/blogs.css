@@ -46,6 +46,16 @@ body.light-mode a {
     color: var(--mate-dark-red);
 }
 
+h1 {
+    text-align: center;
+}
+h2 {
+    padding-inline: 5px;
+    color: var(--mate-dark);
+    background-image: linear-gradient(to left, var(--mate-dark), var(--mate-text));
+    border-radius: 20px;
+}
+
 a {
     display: inline-block;
     color: var(--mate-red);
@@ -57,10 +67,18 @@ a:hover {
     transform: scale(1.2);
 }
 
-.column {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: inherit;
+    border-bottom: 1vh dashed var(--mate-light);
+    padding-bottom: 2vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 
     min-height: 100vh;
 
@@ -71,4 +89,8 @@ a:hover {
     transition: box-shadow 0.5s ease;
 
     border-inline: 2vw solid var(--mate-light);
+}
+
+main {
+    margin: 3%;
 }
