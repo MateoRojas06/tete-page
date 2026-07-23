@@ -6,6 +6,14 @@
   font-weight: 400;
   src: url('../fonts/jersey10.woff2') format('woff2');
 }
+@font-face {
+  font-display: swap;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/jetbrainsmono.woff2') format('woff2'); 
+}
+
 
 /*DEFINITIONS*/
 :root {
@@ -112,4 +120,18 @@ main {
 }
 main p {
     text-align: justify;
+}
+
+.code-block {
+    background-color: var(--mate-light);
+    text-align: left;
+    padding: 1rem 0;
+
+    border: 5px dashed var(--mate-dark);
+
+    font-family: Jetbrains Mono;
+    font-size: 65%;
+}
+.code-block p {
+    margin: 0.3rem 0 0 3rem;
 }
