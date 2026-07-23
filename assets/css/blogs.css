@@ -131,6 +131,8 @@ main p {
 
     font-family: Jetbrains Mono;
     font-size: 65%;
+
+    overflow-x: scroll;
 }
 .code-block p {
     margin: 0.3rem 0 0 3rem;

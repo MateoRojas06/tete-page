@@ -48,12 +48,18 @@
                 <h2>Fonts</h2>
                 <h3>1) Not storing fonts locally</h3>
                 <p>If you use any fonts, you should just download them to your computer and define them using the font-face rule in css, this will shorten load times and make your site requiere less bandwith</p>
-                <p>Here is a generic example (this goes on your stylesheet)</p>
+                <p>Here is a generic example (this goes on your stylesheet). Make sure the [name] is the same as the one you were using before and you won't have to do any more changes.</p>
                 <div class="code-block">
-                    <p>this</p>
-                    <p>is</p>
-                    <p>example code</p>
+                    <p>@font-face {</p>
+                    <p>font-display: swap;</p>
+                    <p>font-family: [name];</p>
+                    <p>font-style: normal;</p>
+                    <p>font-weight: 400;</p>
+                    <p>src: url('[path].woff2') format('woff2');</p>
+                    <p>}</p>
                 </div>
+                <h3>2) Not setting font-display to swap</h3>
+                <p>As you can see on the example above, the parameter font-display is set to swap, do this so your site doesn't show invisible text before the font finishes loading</p>
             </main>
         </div>
     </body>
