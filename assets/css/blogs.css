@@ -65,7 +65,7 @@ h1 {
 h2 {
     padding-inline: 2vw;
     color: var(--mate-dark);
-    background-image: linear-gradient(to left, var(--mate-dark), var(--mate-text));
+    background-image: linear-gradient(to left, rgba(20, 20, 20, 0.2), var(--mate-text));
     border-radius: 20px;
     transition: color 0.5s ease;
 }
@@ -75,7 +75,6 @@ a {
     color: var(--mate-red);
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 175%;
 }
 a:hover {
     color: blueviolet;
@@ -94,6 +93,9 @@ header ul {
     display: flex;
     gap: 3vw;
     justify-content: space-evenly;
+}
+header a {
+    font-size: 175%;
 }
 
 .column {
@@ -124,6 +126,7 @@ main p {
 
 .code-block {
     background-color: var(--mate-light);
+    color: var(--mate-text);
     text-align: left;
     padding: 1rem 0;
 

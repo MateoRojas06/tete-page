@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="mate">
-        <meta name="description" content="mate's personal blog, in this entry they go into detail about...">
+        <meta name="description" content="mate's personal blog, in this entry they go into detail about coomon mistakes webmasters make when making their own site and simple solutions they can apply to improve load times and user experience">
 
         <meta property="og:title" content="Blog 1">
         <meta property="og:description" content="Blog description">
@@ -13,9 +13,9 @@
 
         <title>Tete's Blog</title>
 
-        <link rel="alternate" hreflang="en" href="https://tetecientos.neocities.org/en/blog1>
-        <link rel="alternate" hreflang="es" href="https://tetecientos.neocities.org/es/blog1>
-        <link rel="alternate" hreflang="x-default" href="https://tetecientos.neocities.org/en/blog1">
+        <link rel="alternate" hreflang="en" href="https://tetecientos.neocities.org/en/blogs/blog1>
+        <link rel="alternate" hreflang="es" href="https://tetecientos.neocities.org/es/blogs/blog1>
+        <link rel="alternate" hreflang="x-default" href="https://tetecientos.neocities.org/en/blogs/blog1">
 
         <link rel="icon" href="../../assets/images/icon.svg">
         <link rel="preload" href="../assets/fonts/jersey10.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -60,6 +60,22 @@
                 </div>
                 <h3>2) Not setting font-display to swap</h3>
                 <p>As you can see on the example above, the parameter font-display is set to swap, do this so your site doesn't show invisible text before the font finishes loading</p>
+                <h3>3) Fallback font and format</h3>
+                <p>Finally, I'l recommend you download your fonts in .woff2 format and set a fallback font. If you use fonts from google fonts, I recommend you use <a href="https://gwfh.mranftl.com">gwfh</a> which let's you download the fonts and provides de CSS right away.</p>
+                <p>For example here I set a font for my body and a fallback font which will come into action if the first one fails at any point (putting another font after the coma, you can use multiple fallbacks and they'll be read from left to right).</p>
+                <div class="code-block">
+                    <p>body {</p>
+                    <p>font-family: Jersey10, sans-serif;</p>
+                    <p>}</p>
+                </div>
+                <h2>Accesibility</h2>
+                <h3>1) Not adding alt text for images</h3>
+                <p>This one's pretty simple, whenever you place an image via html, make sure to fill out the 'alt' parameter</p>
+                <div class="code-block">
+                    <p>&lt;img src="[path]" alt="description of image"&gt;</p>
+                </div>
+                <h3>2) Not having enough contrast</h3>
+                <p>Your font and background colors should have enough contrast for users to be able to read without issues. You can use the <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> to know if your colors are different enough.</p>
             </main>
         </div>
     </body>
