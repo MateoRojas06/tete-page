@@ -76,6 +76,17 @@
                 </div>
                 <h3>2) Not having enough contrast</h3>
                 <p>Your font and background colors should have enough contrast for users to be able to read without issues. You can use the <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> to know if your colors are different enough.</p>
+                <h3>3) Not using landmarks</h3>
+                <p>Instead of using generic divs for everything, make sure you signal which part of your page is which with landmarks</p>
+                <p>They work just like divs and will help users with screen readers to navigate your site</p>
+                <div class="code-block">
+                    <p>&lt;header&gt; for banners and such at the top of the site</p>
+                    <p>&lt;nav&gt; for navigation links</p>
+                    <p>&lt;main&gt; for the main content</p>
+                    <p>&lt;aside&gt; for side content</p>
+                    <p>&lt;footer&gt; contact or copyright info at the bottom</p>
+                    <p>&lt;search&gt; for search bars</p>
+                </div>
             </main>
         </div>
     </body>
