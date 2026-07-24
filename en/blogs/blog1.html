@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="mate">
-        <meta name="description" content="mate's personal blog, in this entry they go into detail about coomon mistakes webmasters make when making their own site and simple solutions they can apply to improve load times and user experience">
+        <meta name="description" content="mate's personal blog, in this entry they go into detail about common mistakes webmasters make when making their own site and simple solutions they can apply to improve load times and user experience">
 
-        <meta property="og:title" content="Blog 1">
-        <meta property="og:description" content="Blog description">
+        <meta property="og:title" content="Tiny mistakes">
+        <meta property="og:description" content="Everyone has regrets, but luckily these mistakes have easy fixes.">
         <meta property="og:image" content="assets/images/equipeta.png">
 
         <title>Tete's Blog</title>
@@ -31,7 +31,7 @@
                     <ul style="list-style: none;">
                         <li><a href="../blog-nav.html">Go back</a></li>
                         <li><button id="theme_toggle">Toggle Light Mode</button></li>
-                        <li><select id="language_select" onchange="changeLanguage(this.value)">
+                        <li><select id="language_select" onchange="changeLanguage(this.value)" aria-label="Language">
                         <option value="en" selected>English</option>
                         <option value="es">Español</option>
                         </select></li>
@@ -40,14 +40,14 @@
             </header>
             <main>
                 <h2>Personal Notes</h2>
-                <p>This site was abandoned for two years before I decided to come back to Neocities, in that time I got out of school and entered university. Now I'm entering my fourth semester and I felt like it was appropiate to talk about how a lot of webmasters here don't follow best practices when making sites, which can lead to bad load times and worse user experience.</p>
+                <p>This site was abandoned for two years before I decided to come back to Neocities, in that time I got out of school and entered university. Now I'm going into my fourth semester and I felt like it was appropiate to talk about how a lot of webmasters here don't follow best practices when making sites, which can lead to bad load times and worse user experience.</p>
                 <p>Of course I'm not trying to act superior or give the impression that I'm some kind of authority on this matter. This website is riddled with mistakes I made because of my own inexperience.</p>
-                <p>Everything that I'm going to talk about here is easily fixable by writting a couple words into your html or css files.</p>
+                <p>Everything that I'm going to talk about here is easily fixable by writting a couple lines into your html or css files.</p>
                 <h2>tldr</h2>
                 <p>Just get the google lighthouse extension and do what it tells you to do, it'll help make your site faster and easier to use.</p>
                 <h2>Fonts</h2>
                 <h3>1) Not storing fonts locally</h3>
-                <p>If you use any fonts, you should just download them to your computer and define them using the font-face rule in css, this will shorten load times and make your site requiere less bandwith</p>
+                <p>If you use any fonts, you should just download them to your computer and define them using the font-face rule in css, this will shorten load times quite a bit</p>
                 <p>Here is a generic example (this goes on your stylesheet). Make sure the [name] is the same as the one you were using before and you won't have to do any more changes.</p>
                 <div class="code-block">
                     <p>@font-face {</p>
@@ -61,7 +61,7 @@
                 <h3>2) Not setting font-display to swap</h3>
                 <p>As you can see on the example above, the parameter font-display is set to swap, do this so your site doesn't show invisible text before the font finishes loading</p>
                 <h3>3) Fallback font and format</h3>
-                <p>Finally, I'l recommend you download your fonts in .woff2 format and set a fallback font. If you use fonts from google fonts, I recommend you use <a href="https://gwfh.mranftl.com">gwfh</a> which let's you download the fonts and provides de CSS right away.</p>
+                <p>Finally, I'll tell you download your fonts in .woff2 format because it's the best for websites and set a fallback font. If you use fonts from google fonts, I recommend you use <a href="https://gwfh.mranftl.com">gwfh</a> which let's you download the fonts and provides de CSS right away.</p>
                 <p>For example here I set a font for my body and a fallback font which will come into action if the first one fails at any point (putting another font after the coma, you can use multiple fallbacks and they'll be read from left to right).</p>
                 <div class="code-block">
                     <p>body {</p>
@@ -86,6 +86,20 @@
                     <p>&lt;aside&gt; for side content</p>
                     <p>&lt;footer&gt; contact or copyright info at the bottom</p>
                     <p>&lt;search&gt; for search bars</p>
+                </div>
+                <h2>Misc</h2>
+                <h3>1) Forzing JavaScript to load at the start</h3>
+                <p>When using the script tag make sure to add the 'defer' atribute so your page loads fully before the script starts executing</p>
+                <div class="code-block">
+                    <p>&lt;script src="[path].js" defer&gt;&lt;/script&gt;</p>
+                </div>
+                <h3>2) Not setting explicit dimensions</h3>
+                <p>On CSS, make sure to define the width and height of your images so that the page reserves the space they'll use and prevent layout shifts.</p>
+                <div class="code-block">
+                    <p>#[id de imagen] {</p>
+                    <p>width: [number]px;</p>
+                    <p>height: [number]px;</p>
+                    <p>}</p>
                 </div>
                 <h2>Giving up</h2>
                 <p>If you give up you can never improve, so make sure you never give up. Keep updating your site, learn new things and try new styles.</p>

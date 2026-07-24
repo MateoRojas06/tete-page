@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="mate">
-        <meta name="description" content="mate's personal blog, in this entry they go into detail about coomon mistakes webmasters make when making their own site and simple solutions they can apply to improve load times and user experience">
+        <meta name="description" content="blog personal de mate, en esta entrada hablan de errores comunes que los webmasters cometen al hacer sus páginas y las soluciones simples que pueden aplicar para mejorar tiempos de carga y experiencia de usuario">
 
-        <meta property="og:title" content="Blog 1">
-        <meta property="og:description" content="Blog description">
+        <meta property="og:title" content="Pequeños errores">
+        <meta property="og:description" content="Todos nos arrepentimos, pero estos errores son fáciles de arreglar.">
         <meta property="og:image" content="assets/images/equipeta.png">
 
-        <title>Tete's Blog</title>
+        <title>Blog de tete</title>
 
         <link rel="alternate" hreflang="en" href="https://tetecientos.neocities.org/en/blogs/blog1>
         <link rel="alternate" hreflang="es" href="https://tetecientos.neocities.org/es/blogs/blog1>
@@ -31,7 +31,7 @@
                     <ul style="list-style: none;">
                         <li><a href="../blog-nav.html">Volver</a></li>
                         <li><button id="theme_toggle">Modo Claro</button></li>
-                        <li><select id="language_select" onchange="changeLanguage(this.value)">
+                        <li><select id="language_select" onchange="changeLanguage(this.value)" aria-label="Idioma">
                         <option value="en">English</option>
                         <option value="es" selected>Español</option>
                         </select></li>
@@ -39,57 +39,70 @@
                 </div>
             </header>
             <main>
-                <h2>Personal Notes</h2>
-                <p>This site was abandoned for two years before I decided to come back to Neocities, in that time I got out of school and entered university. Now I'm entering my fourth semester and I felt like it was appropiate to talk about how a lot of webmasters here don't follow best practices when making sites, which can lead to bad load times and worse user experience.</p>
-                <p>Of course I'm not trying to act superior or give the impression that I'm some kind of authority on this matter. This website is riddled with mistakes I made because of my own inexperience.</p>
-                <p>Everything that I'm going to talk about here is easily fixable by writting a couple words into your html or css files.</p>
-                <h2>tldr</h2>
-                <p>Just get the google lighthouse extension and do what it tells you to do, it'll help make your site faster and easier to use.</p>
-                <h2>Fonts</h2>
-                <h3>1) Not storing fonts locally</h3>
-                <p>If you use any fonts, you should just download them to your computer and define them using the font-face rule in css, this will shorten load times and make your site requiere less bandwith</p>
-                <p>Here is a generic example (this goes on your stylesheet). Make sure the [name] is the same as the one you were using before and you won't have to do any more changes.</p>
+                <h2>Notas Personales</h2>
+                <p>Esta página fue abandonada por dos años hasta que decidí volver a Neocities, en ese tiempo terminé el colegio y entré a la universidad. Ahora voy por mi cuarto semestre y pensé que sería apropiado hablar de como muchos de los webmasters aquí no siguen las mejores prácticas al hacer sus páginas, lo que puede llevar a mayores tiempos de carga y peor experiencia del usuario.</p>
+                <p>Aclaro que no intento actuar superior o dar la impresión de que soy una autoridad en este tema. Si te pones a analizar esta página encontrarás muchos errores causados por mi inexperiencia.</p>
+                <p>Todo lo que se hablará aquí es fácil de arreglar añadiendo un par de líneas a tus archivos html o css.</p>
+                <h2>Resumen</h2>
+                <p>Simplemente descarga la extensión de google lighthouse y haz las cosas que dice, hará que tu página sea más veloz y fácil de usar.</p>
+                <h2>Fuentes</h2>
+                <h3>1) No descargar tus fuentes</h3>
+                <p>Si usas fuentes, deberías descargarlas a tu  computador y definirlas usando la regla font-face en css, esto hará que tu sitio cargue bastante más rápido</p>
+                <p>Aquí hay un ejemplo genérico (esto va en tu stylesheet). Asegúrate que [nombre] sea el mismo que ya estabas usando y no tendrás que hacer más cambios.</p>
                 <div class="code-block">
                     <p>@font-face {</p>
                     <p>font-display: swap;</p>
-                    <p>font-family: [name];</p>
+                    <p>font-family: [nombre];</p>
                     <p>font-style: normal;</p>
                     <p>font-weight: 400;</p>
                     <p>src: url('[path].woff2') format('woff2');</p>
                     <p>}</p>
                 </div>
-                <h3>2) Not setting font-display to swap</h3>
-                <p>As you can see on the example above, the parameter font-display is set to swap, do this so your site doesn't show invisible text before the font finishes loading</p>
-                <h3>3) Fallback font and format</h3>
-                <p>Finally, I'l recommend you download your fonts in .woff2 format and set a fallback font. If you use fonts from google fonts, I recommend you use <a href="https://gwfh.mranftl.com">gwfh</a> which let's you download the fonts and provides de CSS right away.</p>
-                <p>For example here I set a font for my body and a fallback font which will come into action if the first one fails at any point (putting another font after the coma, you can use multiple fallbacks and they'll be read from left to right).</p>
+                <h3>2) No poner font-display en swap</h3>
+                <p>Como puedes ver en el ejemplo de arriba, el parámetro font-display está en swap, hacer esto evita que haya texto invisible en tu página mientras carga</p>
+                <h3>3) Fuente fallback y formato</h3>
+                <p>Finalmente, te diré que descargues tus fuentes en formato .woff2 y selecciones fuentes fallback. Si tus fuentes son de google fonts te recomiendo que uses <a href="https://gwfh.mranftl.com">gwfh</a> que te permite descargar fuentes en .woff2 y te dá el CSS necesario al instante.</p>
+                <p>FPor ejemplo aquí defino una fuente para mi body y una fuente fallback que se va a usar si la primera falla por algún motivo (es la fuente despues de la coma, puedes colocar múltiples fallbacks y se usarán en orden de izquierda a derecha)</p>
                 <div class="code-block">
                     <p>body {</p>
                     <p>font-family: Jersey10, sans-serif;</p>
                     <p>}</p>
                 </div>
-                <h2>Accesibility</h2>
-                <h3>1) Not adding alt text for images</h3>
-                <p>This one's pretty simple, whenever you place an image via html, make sure to fill out the 'alt' parameter</p>
+                <h2>Accesibilidad</h2>
+                <h3>1) No añadir texto alternativo</h3>
+                <p>Este es bastante simple, cuando coloques una imagen en html, asegúrate de llenar el atributo 'alt'</p>
                 <div class="code-block">
-                    <p>&lt;img src="[path]" alt="description of image"&gt;</p>
+                    <p>&lt;img src="[path]" alt="descripción de imagen"&gt;</p>
                 </div>
-                <h3>2) Not having enough contrast</h3>
-                <p>Your font and background colors should have enough contrast for users to be able to read without issues. You can use the <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> to know if your colors are different enough.</p>
-                <h3>3) Not using landmarks</h3>
-                <p>Instead of using generic divs for everything, make sure you signal which part of your page is which with landmarks</p>
-                <p>They work just like divs and will help users with screen readers to navigate your site</p>
+                <h3>2) Falta de contraste</h3>
+                <p>Tus fuentes y fondos deberían tener sufieciente contraste para que se pueda leer sin problemas, puedes usar <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> para revisar si tus colores son lo suficientemente distintos.</p>
+                <h3>3) No usar landmarks</h3>
+                <p>No deberías usar divs genéricos para todo, asegúrate de señalar que parte del contenido es cual con landmarks</p>
                 <div class="code-block">
-                    <p>&lt;header&gt; for banners and such at the top of the site</p>
-                    <p>&lt;nav&gt; for navigation links</p>
-                    <p>&lt;main&gt; for the main content</p>
-                    <p>&lt;aside&gt; for side content</p>
-                    <p>&lt;footer&gt; contact or copyright info at the bottom</p>
-                    <p>&lt;search&gt; for search bars</p>
+                    <p>&lt;header&gt; para banners y similares en la parte superior</p>
+                    <p>&lt;nav&gt; para links de navegación</p>
+                    <p>&lt;main&gt; para links de navegación</p>
+                    <p>&lt;aside&gt; para contenido adicional</p>
+                    <p>&lt;footer&gt; información de contacto o copyright</p>
+                    <p>&lt;search&gt; barras de búsqueda</p>
                 </div>
-                <h2>Giving up</h2>
-                <p>If you give up you can never improve, so make sure you never give up. Keep updating your site, learn new things and try new styles.</p>
-                <p>Have a nice day, and thanks for reading. I don't have a comment section on this site right now, so if you have anything you want to tell me, leave a comment on my Neocities profile!</p>
+                <h2>Misceláneos</h2>
+                <h3>1) Forzar carga de JS al inicio</h3>
+                <p>Al seleccionar un script, usa el atributo 'defer' para que la página pueda cargar por completo antes que javascript se ejecute.</p>
+                <div class="code-block">
+                    <p>&lt;script src="[path].js" defer&gt;&lt;/script&gt;</p>
+                </div>
+                <h3>2) No usar altura y ancho explícitos</h3>
+                <p>En CSS asegúrate de poner el ancho y altura de tus imagenes, esto hace que la página reserve el espacio que van a ocupar mientras está cargando.</p>
+                <div class="code-block">
+                    <p>#[id de imagen] {</p>
+                    <p>width: [número]px;</p>
+                    <p>height: [número]px;</p>
+                    <p>}</p>
+                </div>
+                <h2>Rendirse</h2>
+                <p>Si te rindes, nunca puedes mejorar, asegúrate de no hacerlo, sigue actualizando tu página y probando cosas nuevas.</p>
+                <p>Pásalo bien y gracias por leer. Aún no tengo una sección de comentarios o algo similar pero si hay algo que quieras decirme, déjame un comentario en mi perfil de Neocities!</p>
             </main>
         </div>
     </body>
